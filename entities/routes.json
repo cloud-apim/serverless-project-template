@@ -6,9 +6,9 @@
             "default"
           ]
         },
-        "id": "first_route",
-        "name": "First route",
-        "description": "A first route",
+        "id": "get_all_todos",
+        "name": "GET all todos",
+        "description": "GET all todos",
         "tags": [],
         "metadata": {},
         "enabled": true,
