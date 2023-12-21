@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "enableAuthentication": true,
+  "pageTitle": "test portal",
+  "generateExamples": true
+}
