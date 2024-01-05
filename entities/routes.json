@@ -20,7 +20,7 @@
     ],
     "frontend": {
       "domains": [
-        "${env.HOST}/todos"
+        "${env.HOST}/rtodos"
       ],
       "strip_path": true,
       "exact": true,
@@ -120,7 +120,7 @@
     ],
     "frontend": {
       "domains": [
-        "${env.HOST}/todos/:id"
+        "${env.HOST}/rtodos/:id"
       ],
       "strip_path": true,
       "exact": true,
