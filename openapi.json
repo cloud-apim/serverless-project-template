@@ -2,7 +2,6 @@
   "openapi": "3.1.0",
   "info": {
     "title": "A TODO-Task API",
-    "description": "A simple api to handle tasks.",
     "version": "1.0.0",
     "contact": {
       "name": "TODO API",
