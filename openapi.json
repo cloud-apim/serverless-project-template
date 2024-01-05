@@ -281,7 +281,6 @@
       "all": [
         {
           "enabled": true,
-          "debug": false,
           "plugin": "cp:otoroshi.next.plugins.OverrideHost",
           "include": [],
           "exclude": [],
