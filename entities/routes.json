@@ -20,7 +20,7 @@
     ],
     "frontend": {
       "domains": [
-        "${env.HOST}/"
+        "${environment.HOST}/"
       ],
       "strip_path": true,
       "exact": true,
