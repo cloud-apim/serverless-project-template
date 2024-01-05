@@ -278,7 +278,19 @@
       }
     },
     "x-cloud-apim-plugins": {
-      "all": []
+      "all": [
+        {
+          "enabled": true,
+          "debug": false,
+          "plugin": "cp:otoroshi.next.plugins.OverrideHost",
+          "include": [],
+          "exclude": [],
+          "config": {},
+          "plugin_index": {
+            "transform_request": 0
+          }
+        }
+      ]
     },
     "x-cloud-apim-backends": {
       "jsonplaceholder": {
