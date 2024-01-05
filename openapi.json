@@ -20,7 +20,7 @@
     }
   ],
   "paths": {
-    "/task": {
+    "/todos": {
       "get": {
         "tags": [
           "task"
@@ -51,6 +51,12 @@
               }
             }
           }
+        },
+        "x-cloud-apim-backend": {
+          "$ref": "#/components/x-cloud-apim-backends/jsonplaceholder"
+        },
+        "x-cloud-apim-plugins": {
+          "$ref": "#/components/x-cloud-apim-plugins/all"
         }
       },
       "post": {
@@ -89,10 +95,16 @@
               }
             }
           }
+        },
+        "x-cloud-apim-backend": {
+          "$ref": "#/components/x-cloud-apim-backends/jsonplaceholder"
+        },
+        "x-cloud-apim-plugins": {
+          "$ref": "#/components/x-cloud-apim-plugins/all"
         }
       }
     },
-    "/task/{taskId}": {
+    "/todos/{taskId}": {
       "parameters": [
         {
           "name": "taskId",
@@ -100,7 +112,7 @@
           "description": "The id of the task",
           "required": true,
           "schema": {
-            "type": "string"
+            "type": "integer"
           },
           "example": "e1cb23d0-6cbe-4a29-b586-bfa424bc93fd"
         }
@@ -132,6 +144,12 @@
               }
             }
           }
+        },
+        "x-cloud-apim-backend": {
+          "$ref": "#/components/x-cloud-apim-backends/jsonplaceholder"
+        },
+        "x-cloud-apim-plugins": {
+          "$ref": "#/components/x-cloud-apim-plugins/all"
         }
       },
       "put": {
@@ -170,6 +188,12 @@
               }
             }
           }
+        },
+        "x-cloud-apim-backend": {
+          "$ref": "#/components/x-cloud-apim-backends/jsonplaceholder"
+        },
+        "x-cloud-apim-plugins": {
+          "$ref": "#/components/x-cloud-apim-plugins/all"
         }
       },
       "delete": {
@@ -192,6 +216,12 @@
               }
             }
           }
+        },
+        "x-cloud-apim-backend": {
+          "$ref": "#/components/x-cloud-apim-backends/jsonplaceholder"
+        },
+        "x-cloud-apim-plugins": {
+          "$ref": "#/components/x-cloud-apim-plugins/all"
         }
       }
     }
@@ -244,6 +274,23 @@
             "type": "string",
             "examples": ["Could not perform the task"]
           }
+        }
+      }
+    },
+    "x-cloud-apim-plugins": {
+      "all": []
+    },
+    "x-cloud-apim-backends": {
+      "jsonplaceholder": {
+          "targets": [
+            {
+              "hostname": "jsonplaceholder.typicode.com",
+              "port": 443,
+              "tls": true
+            }
+          ],
+          "root": "/",
+          "rewrite": false
         }
       }
     }
