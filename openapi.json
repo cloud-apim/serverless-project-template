@@ -1,8 +1,9 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "A TODO-Task API",
+    "title": "TODO API",
     "version": "1.0.0",
+    "description": "# Introduction\nWelcome to the reference for the TODO API! \n\nTODO API is a simple api to handle tasks.",
     "contact": {
       "name": "TODO API",
       "url": "https://www.cloud-apim.com",
@@ -10,8 +11,7 @@
     },
     "x-logo-none": {
       "url": "https://www.cloud-apim.com/assets/logo/cloud-apim-logo-inverted.png"
-    },
-    "description": "# Introduction\nWelcome to the reference for the TODO API! \n\nTODO API is a simple api to handle tasks."
+    }
   },
   "tags": [
     {
@@ -212,18 +212,20 @@
           "title": {
             "description": "description of the task",
             "type": "string",
-            "example": "My important task"
+            "examples": ["My important task", "Do something"]
           },
           "id": {
             "description": "id of the task",
-            "type": "number",
+            "type": "integer",
             "readOnly": true,
-            "example": 1
+            "format": "int32",
+            "examples": [1, 2, 3, 4]
           },
           "userId": {
             "description": "id of the user that created the task",
-            "type": "number",
-            "example": 2
+            "type": "integer",
+            "format": "int32",
+            "examples": [1, 2, 3, 4]
           }
         }
       },
@@ -235,12 +237,12 @@
             "format": "int32",
             "description": "Error code that identify of the error",
             "type": "integer",
-            "example": "1000"
+            "examples": ["1000"]
           },
           "message": {
             "description": "Short description of the error",
             "type": "string",
-            "example": "Could not perform the task"
+            "examples": ["Could not perform the task"]
           }
         }
       }
