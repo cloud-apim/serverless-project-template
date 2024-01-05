@@ -294,16 +294,15 @@
     },
     "x-cloud-apim-backends": {
       "jsonplaceholder": {
-          "targets": [
-            {
-              "hostname": "jsonplaceholder.typicode.com",
-              "port": 443,
-              "tls": true
-            }
-          ],
-          "root": "/",
-          "rewrite": false
-        }
+        "targets": [
+          {
+            "hostname": "jsonplaceholder.typicode.com",
+            "port": 443,
+            "tls": true
+          }
+        ],
+        "root": "/",
+        "rewrite": false
       }
     }
   }
