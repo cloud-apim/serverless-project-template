@@ -12,7 +12,7 @@
     "x-logo-none": {
       "url": "https://www.cloud-apim.com/assets/logo/cloud-apim-logo-inverted.png"
     },
-    "description": "# Introduction\nWelcome to the reference for the TODO API! TODO API is a simple api to handle tasks."
+    "description": "# Introduction\nWelcome to the reference for the TODO API! \n\nTODO API is a simple api to handle tasks."
   },
   "tags": [
     {
