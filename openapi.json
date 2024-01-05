@@ -217,14 +217,14 @@
           },
           "id": {
             "description": "id of the task",
-            "type": "string",
+            "type": "number",
             "readOnly": true,
-            "example": "e1cb23d0-6cbe-4a29-b586-bfa424bc93fd"
+            "example": 1
           },
           "userId": {
             "description": "id of the user that created the task",
-            "type": "string",
-            "example": "e1cb23d0-6cbe-4a29-b586-bfa424bc93fd"
+            "type": "number",
+            "example": 2
           }
         }
       },
