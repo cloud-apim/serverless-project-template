@@ -284,8 +284,38 @@
           "plugin": "cp:otoroshi.next.plugins.OverrideHost"
         },
         {
+          "plugin": "cp:otoroshi.next.plugins.ApikeyCalls",
           "enabled": true,
-          "plugin": "cp:otoroshi.next.plugins.ApikeyCalls"
+          "config": {
+            "extractors": {
+              "basic": {
+                "enabled": true
+              },
+              "custom_headers": {
+                "enabled": true
+              },
+              "client_id": {
+                "enabled": false
+              },
+              "jwt": {
+                "enabled": true,
+                "secret_signed": true,
+                "keypair_signed": true,
+                "include_request_attrs": false
+              },
+              "oto_bearer": {
+                "enabled": true
+              }
+            },
+            "routing": {
+              "enabled": false
+            },
+            "validate": true,
+            "mandatory": true,
+            "pass_with_user": false,
+            "wipe_backend_request": true,
+            "update_quotas": true
+          }
         }
       ]
     },
