@@ -10,7 +10,7 @@
     "name": "GET root",
     "description": "GET root",
     "tags": [],
-    "metadata": {},
+    "metadata": { "foo": "${environment.FOO}" },
     "enabled": true,
     "debug_flow": false,
     "export_reporting": false,
