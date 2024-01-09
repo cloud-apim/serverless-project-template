@@ -281,13 +281,11 @@
       "all": [
         {
           "enabled": true,
-          "plugin": "cp:otoroshi.next.plugins.OverrideHost",
-          "include": [],
-          "exclude": [],
-          "config": {},
-          "plugin_index": {
-            "transform_request": 0
-          }
+          "plugin": "cp:otoroshi.next.plugins.OverrideHost"
+        },
+        {
+          "enabled": true,
+          "plugin": "cp:otoroshi.next.plugins.ApikeyCalls"
         }
       ]
     },
