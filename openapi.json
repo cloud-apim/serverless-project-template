@@ -22,11 +22,6 @@
   "paths": {
     "/todos": {
       "get": {
-        "security": [
-          {
-            "bearerAuth": []
-          }
-        ],
         "tags": [
           "task"
         ],
@@ -65,11 +60,6 @@
         }
       },
       "post": {
-        "security": [
-          {
-            "bearerAuth": []
-          }
-        ],
         "tags": [
           "task"
         ],
@@ -128,11 +118,6 @@
         }
       ],
       "get": {
-        "security": [
-          {
-            "bearerAuth": []
-          }
-        ],
         "tags": [
           "task"
         ],
@@ -168,11 +153,6 @@
         }
       },
       "put": {
-        "security": [
-          {
-            "bearerAuth": []
-          }
-        ],
         "tags": [
           "task"
         ],
@@ -217,11 +197,6 @@
         }
       },
       "delete": {
-        "security": [
-          {
-            "bearerAuth": []
-          }
-        ],
         "tags": [
           "task"
         ],
@@ -251,6 +226,11 @@
       }
     }
   },
+  "security": [
+    {
+      "cloud-apim-bearer": []
+    }
+  ],
   "components": {
     "schemas": {
       "Task": {
@@ -303,10 +283,10 @@
       }
     },
     "securitySchemes": {
-      "bearerAuth": {
+      "cloud-apim-bearer": {
         "type": "http",
         "scheme": "bearer",
-        "bearerFormat": "cloud-apim"
+        "bearerFormat": "cloud-apim-bearer"
       }
     },  
     "x-cloud-apim-plugins": {
