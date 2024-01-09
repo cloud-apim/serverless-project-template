@@ -226,11 +226,6 @@
       }
     }
   },
-  "security": [
-    {
-      "cloud-apim-bearer": []
-    }
-  ],
   "components": {
     "schemas": {
       "Task": {
@@ -282,16 +277,6 @@
         }
       }
     },
-    "securitySchemes": {
-      "cloud-apim-bearer": {
-        "type": "http",
-        "scheme": "bearer",
-        "bearerFormat": "cloud-apim-bearer",
-        "name": "Cloud APIM Bearer",
-        "description": "A token provided with the Cloud APIM Apikeys that looks like 'otoapk_xxxxxxxx_xxxxxxxxxxxxx'.",
-        "in": "header"
-      }
-    },  
     "x-cloud-apim-plugins": {
       "all": [
         {
