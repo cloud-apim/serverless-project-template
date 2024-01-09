@@ -1,7 +1,20 @@
 {
   "enabled": true,
-  "enableAuthentication": true,
-  "pageTitle": "test portal",
-  "generateExamples": true,
-  "max_user_created_apikeys": 1
+  "auth": true,
+  "title": "test portal",
+  "examples": true,
+  "path": "/docs",
+  "icon": "https://www.cloud-apim.com/assets/logo/made-with-cloud-apim-inverted.png",
+  "max_user_created_apikeys": 1,
+  "plans": [
+    {
+      "id": "default",
+      "name": "default",
+      "default": true,
+      "description": "The default apikey plan",
+      "throttling": 100,
+      "daily": "10000",
+      "monthly": "10000"
+    }
+  ]
 }
