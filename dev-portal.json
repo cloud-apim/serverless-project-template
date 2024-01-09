@@ -2,5 +2,6 @@
   "enabled": true,
   "enableAuthentication": true,
   "pageTitle": "test portal",
-  "generateExamples": true
+  "generateExamples": true,
+  "max_user_created_apikeys": 1
 }
