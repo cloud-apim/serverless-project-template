@@ -285,6 +285,10 @@
         },
         {
           "enabled": true,
+          "plugin": "cp:otoroshi.next.plugins.DisableHttp10"
+        },
+        {
+          "enabled": true,
           "plugin": "cp:otoroshi.next.plugins.OverrideHost"
         },
         {
@@ -297,7 +301,7 @@
           "config": {
             "version": "Latest",
             "ttl": 30,
-            "header_name": null,
+            "header_name": "Otoroshi-Infos",
             "add_fields": null,
             "algo": {
               "type": "HSAlgoSettings",
