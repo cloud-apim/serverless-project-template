@@ -281,7 +281,47 @@
       "all": [
         {
           "enabled": true,
+          "plugin": "cp:otoroshi.next.plugins.ForceHttpsTraffic"
+        },
+        {
+          "enabled": true,
           "plugin": "cp:otoroshi.next.plugins.OverrideHost"
+        },
+        {
+          "enabled": true,
+          "plugin": "cp:otoroshi.next.plugins.SendOtoroshiHeadersBack"
+        },
+        {
+          "enabled": true,
+          "plugin": "cp:otoroshi.next.plugins.OtoroshiInfos",
+          "config": {
+            "version": "Latest",
+            "ttl": 30,
+            "header_name": null,
+            "add_fields": null,
+            "algo": {
+              "type": "HSAlgoSettings",
+              "size": 512,
+              "secret": "${environment.OTOROSHI_INFOS_SIGNATURE_SECRET}",
+              "base64": false
+            }
+          }
+        },
+        {
+          "enabled": false,
+          "plugin": "cp:otoroshi.next.plugins.Cors",
+          "config": {
+            "allow_origin": "*",
+            "expose_headers": [],
+            "allow_headers": [
+              "Authorization"
+            ],
+            "allow_methods": [
+              "GET", "PUT", "POST", "DELETE", "PATCH"
+            ],
+            "max_age": null,
+            "allow_credentials": true
+          }
         },
         {
           "plugin": "cp:otoroshi.next.plugins.ApikeyCalls",
