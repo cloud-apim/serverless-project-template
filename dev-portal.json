@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "auth": true,
-  "title": "test portal",
+  "title": "template portal",
   "examples": true,
   "path": "/docs",
   "icon": "https://www.cloud-apim.com/assets/logo/made-with-cloud-apim-inverted.png",
